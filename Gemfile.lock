@@ -22,11 +22,11 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     tilt (1.4.1)
-    yeah (0.3.3)
+    yeah (0.3.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   opal!
-  yeah (~> 0.3.3)
+  yeah (~> 0.3.5)
