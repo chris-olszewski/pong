@@ -38,6 +38,7 @@ class Ball < Object
 	def collide(game)
 		game.objects.each do |obj|
 			if obj.respond_to?(:touching?) && obj.class == Paddle && obj.touching?(@position, @size)
+				@position.y = [[@position.y, @radius + 16].max, game.display.height - 16 - @radius].min
 				game.score += 1
 				@direction.y *= -1
 			end
