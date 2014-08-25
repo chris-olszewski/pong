@@ -1,3 +1,7 @@
+require 'object'
+require 'ball'
+require 'paddle'
+
 class Pong < Game
 	attr_accessor :input, :objects, :score
 
